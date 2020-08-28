@@ -1,17 +1,17 @@
-document.querySelector('#connect').addEventListener('click', function(event) {
-  document.querySelector('#state').classList.add('connecting');
+document.querySelector('#connect').addEventListener('click', event => {
   playbulbCandle.connect()
-  .then(function() {
+  .then(() => {
     console.log(playbulbCandle.device);
     document.querySelector('#state').classList.remove('connecting');
     document.querySelector('#state').classList.add('connected');
   })
-  .catch(function(error) {
+  .catch(error => {
     console.error('Argh!', error);
   });
-  /* Clicking this button will attempt to connect to the PLAYBULB Candle and
-   * read some values such as Device Name and Battery Level. */
+  
 });
+/* Clicking this button will attempt to connect to the PLAYBULB Candle and
+* read some values such as Device Name and Battery Level. */
 
 function changeColor() {
   /* This function is called when user clicks on an effect radio button. */
