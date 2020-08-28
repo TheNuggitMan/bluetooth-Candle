@@ -3,7 +3,7 @@ document.querySelector('#connect').addEventListener('click', function(event) {
   playbulbCandle.connect()
   .then(function() {
     console.log(playbulbCandle.device);
-    document.querySelector'(#state').classList.remove('connecting');
+    document.querySelector('#state').classList.remove('connecting');
     document.querySelector('#state').classList.add('connected');
   })
   .catch(function(error) {

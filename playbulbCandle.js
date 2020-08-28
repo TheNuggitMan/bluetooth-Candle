@@ -5,7 +5,7 @@
 
   const CANDLE_SERVICE_UUID = 0xFF02;
 
-  class PlaybulbCandle {
+  class playbulbCandle {
     constructor() {
       this.device = null;
     }
@@ -18,5 +18,5 @@
     }
   }
 
-  window.PlaybulbCandle - new PlaybulbCandle();
+  window.playbulbCandle - new playbulbCandle();
 })();
